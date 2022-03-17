@@ -1,0 +1,16 @@
+[features]
+seeds = false
+
+[programs.devnet]
+solana_news = "DjEMjxwVGj65CF22aS7davstDVbfNfeTDzAYgSk2XMch"
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+cluster = "devnet"
+wallet = "/Users/mohit/.config/solana/devnet-news.json"
+
+[scripts]
+feed = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/solana-feed.ts"
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/solana-news.ts"
